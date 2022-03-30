@@ -1,6 +1,8 @@
 ## Countries App (CLI)! <img width="22px" src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif">
 
+
 <img align="right" alt="GIF" src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" />
+
 
 ### Proyecto de actividades turísticas!
 - Single Page Application (SPA), BD & API.
