@@ -1,4 +1,4 @@
-## Countries App! <img width="22px" src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif">
+## Countries App (CLI)! <img width="22px" src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif">
 
 
 <a href="https://countries-app-cli.vercel.app/">
