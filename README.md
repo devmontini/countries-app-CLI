@@ -2,6 +2,15 @@
 
 <img align="right" alt="GIF" src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" />
 
+### Proyecto de actividades turísticas!
+- Single Page Application (SPA), BD & API.
+- Search countries, add activities, sort, fither.
+- Tecnologías:<br />
+    Front => React, Redux, JavaScript, HTML<br />
+    Style => Tailwind, CSS<br />
+    Back => https://github.com/devmontini/countries-app-API
+    
+    
 <a href="https://countries-app-cli.vercel.app/">
   <img align="left" alt="Deploy App" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/appstore.svg" />
 </a><br />
@@ -18,13 +27,3 @@
   <img align="left" alt="Portfolio" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/affinityphoto.svg" />
 </a><br />
   <p>Portfolio</p><br />
-
-
-
-### Proyecto de actividades turísticas!
-- Single Page Application (SPA), BD & API.
-- Search countries, add activities, sort, fither.
-- Tecnologías:<br />
-    Front => React, Redux, JavaScript, HTML<br />
-    Style => Tailwind, CSS<br />
-    Back => https://github.com/devmontini/countries-app-API
