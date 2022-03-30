@@ -1,5 +1,6 @@
 ## Countries App (CLI)! <img width="22px" src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif">
 
+<img align="right" alt="GIF" src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" />
 
 <a href="https://countries-app-cli.vercel.app/">
   <img align="left" alt="Deploy App" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/appstore.svg" />
@@ -18,7 +19,7 @@
 </a><br />
   <p>Portfolio</p><br />
 
-<img align="right" alt="GIF" src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" />
+
 
 ### Proyecto de actividades turísticas!
 - Single Page Application (SPA), BD & API.
