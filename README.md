@@ -22,4 +22,4 @@
 - Tecnologías:<br />
     Front => React, Redux, JavaScript, HTML<br />
     Style => Tailwind, CSS<br />
-    back => https://github.com/devmontini/countries-app-API
+    Back => https://github.com/devmontini/countries-app-API
