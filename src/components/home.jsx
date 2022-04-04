@@ -20,14 +20,23 @@ export default function HomePage () {
     const indexOfLastCountry = currentPage * countriesPerPage // ultimo countri en 10 (1 x 10)
     const indexOfFirstCountry =  indexOfLastCountry - countriesPerPage //// primer countri en 0 (10 - 10)
     const currentCountry = Array.isArray(allCountries) && allCountries.slice(indexOfFirstCountry, indexOfLastCountry)
+    const [loading, setLoading] = useState(true);
 
     const paginado = (pageNumber) => {
         setCurrentPage(pageNumber)
     }
 
     useEffect(() => {
-        dispatch(getCountries())
-    },[dispatch])
+    async function loadProducts() {
+      await dispatch(getCountries());
+
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+    }
+
+    loadProducts();
+  }, [dispatch]);
 
     useEffect(() => {
         dispatch(getAllActivities())
@@ -128,29 +137,43 @@ export default function HomePage () {
             <div className={styles.countriesPag}>
 
                 {/* area */}
-                <div className={styles.area}>
-                    {
-                        currentCountry ? currentCountry.map((el)=> {
-                            return (
-                                <div key={el.id}>
-                                    <Link to={'/details/pais/' + el.id}>
-                                        <Card flags={el.flags} name={el.name} continents={el.continents} key={el.id}/>
-                                    </Link>
-                                </div>
-                            )
-                        }) :
-                        <div>
-                            <Link to={'/details/pais/' + allCountries.id}>
-                                <Card 
-                                    flags={allCountries.flags} 
-                                    name={allCountries.name}
-                                    continents={allCountries.continents} 
-                                    key={allCountries.id}>
-                                </Card>
-                            </Link>
-                        </div>
-                    } 
+               <div className={styles.area}>
+          {loading ? (
+            <>
+              <p>Loading... Countries</p>
+            </>
+          ) : (
+            <>
+              {currentCountry ? (
+                currentCountry.map((el) => {
+                  return (
+                    <div key={el.id}>
+                      <Link to={"/details/pais/" + el.id}>
+                        <Card
+                          flags={el.flags}
+                          name={el.name}
+                          continents={el.continents}
+                          key={el.id}
+                        />
+                      </Link>
+                    </div>
+                  );
+                })
+              ) : (
+                <div>
+                  <Link to={"/details/pais/" + allCountries.id}>
+                    <Card
+                      flags={allCountries.flags}
+                      name={allCountries.name}
+                      continents={allCountries.continents}
+                      key={allCountries.id}
+                    ></Card>
+                  </Link>
                 </div>
+              )}
+            </>
+          )}
+        </div>
 
                 {/* paginado */}  
                 <div className={styles.paginado} > 
