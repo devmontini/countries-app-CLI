@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "Countries App",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,6 +21,7 @@
     "redux-thunk": "^2.4.1",
     "web-vitals": "^0.2.4"
   },
+  "author": "Montini Franco",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
